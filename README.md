@@ -4,14 +4,12 @@ This project is designed to provide an initial setup with pre-configured **authe
 
 ---
 
-## 🚀 Installation Process
+##  Installation Process
 
 1. **Clone the repository**
    ```bash
    git clone "repo-url"
 ## Install dependencies
-
-bash >>
 
 npm install
 
@@ -19,16 +17,17 @@ npm install
 
 Create a <b>.env</b> file in the project root with the following example:
 
-bash
+```bash
 
 NODE_ENV=
 PORT=
 DATABASE_URL=
 BCRYPT_SALT_ROUNDS=
 JWT_SECRET=
+
 Run the project
 
-bash
+```bash
 
 npm run dev
 🧱 Create the Project from Scratch
@@ -36,14 +35,14 @@ If you want to build the same structure manually, follow these steps:
 
 Create and open your project folder
 
-bash
+```bash
 
 mkdir backend_starter
 cd backend_starter
 code .
 Initialize and install dependencies
 
-bash
+```bash
 
 npm init -y
 npm install express mongoose cors dotenv
@@ -92,6 +91,6 @@ backend_starter/
 └── .env
 Run the development server
 
-bash
+```bash
 
 npm run dev
