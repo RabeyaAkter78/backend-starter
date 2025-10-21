@@ -90,7 +90,7 @@ Configure it as follows:
 3.**Create the folder structure**
 
 
-
+```bash
 backend_starter/
 ├── src/
 │   ├── app.ts
@@ -99,6 +99,7 @@ backend_starter/
 ├── tsconfig.json
 └── .env
 
+```
 **Run the development server**
 
 ```bash
