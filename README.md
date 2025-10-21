@@ -9,17 +9,18 @@ This project is designed to provide an initial setup with pre-configured **authe
 1. **Clone the repository**
    ```bash
    git clone "repo-url"
-Install dependencies
+## Install dependencies
 
-bash
-Copy code
+bash >>
+
 npm install
-Set up environment variables
 
-Create a .env file in the project root with the following example:
+## Set up environment variables
+
+Create a <b>.env</b> file in the project root with the following example:
 
 bash
-Copy code
+
 NODE_ENV=
 PORT=
 DATABASE_URL=
@@ -28,7 +29,7 @@ JWT_SECRET=
 Run the project
 
 bash
-Copy code
+
 npm run dev
 🧱 Create the Project from Scratch
 If you want to build the same structure manually, follow these steps:
@@ -36,14 +37,14 @@ If you want to build the same structure manually, follow these steps:
 Create and open your project folder
 
 bash
-Copy code
+
 mkdir backend_starter
 cd backend_starter
 code .
 Initialize and install dependencies
 
 bash
-Copy code
+
 npm init -y
 npm install express mongoose cors dotenv
 npm install typescript ts-node-dev --save-dev
@@ -53,7 +54,7 @@ Update your tsconfig.json
 Configure it as follows:
 
 json
-Copy code
+
 {
   "compilerOptions": {
     "module": "commonjs",
@@ -70,7 +71,7 @@ Copy code
 Add scripts in package.json
 
 json
-Copy code
+
 "scripts": {
   "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
   "lint": "npx eslint src --ignore-pattern '.js,.ts'",
@@ -81,7 +82,7 @@ Copy code
 Create the folder structure
 
 pgsql
-Copy code
+
 backend_starter/
 ├── src/
 │   ├── app.ts
@@ -92,5 +93,5 @@ backend_starter/
 Run the development server
 
 bash
-Copy code
+
 npm run dev
