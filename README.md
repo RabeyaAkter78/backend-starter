@@ -25,22 +25,28 @@ DATABASE_URL=
 BCRYPT_SALT_ROUNDS=
 JWT_SECRET=
 
-Run the project
+```
+
+2. **Run the project**
 
 ```bash
 
 npm run dev
-🧱 Create the Project from Scratch
+``` 
+
+## Create the Project from Scratch
+
 If you want to build the same structure manually, follow these steps:
 
-Create and open your project folder
+1. **Create and open your project folder**
 
 ```bash
 
 mkdir backend_starter
 cd backend_starter
 code .
-Initialize and install dependencies
+```
+2. **Initialize and install dependencies**
 
 ```bash
 
@@ -48,12 +54,13 @@ npm init -y
 npm install express mongoose cors dotenv
 npm install typescript ts-node-dev --save-dev
 npx tsc --init
-Update your tsconfig.json
+
+```
+**Update your tsconfig.json**
 
 Configure it as follows:
 
-json
-
+```bash
 {
   "compilerOptions": {
     "module": "commonjs",
@@ -67,9 +74,10 @@ json
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
 }
-Add scripts in package.json
+```
+**Add scripts in package.json**
 
-json
+```bash
 
 "scripts": {
   "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
@@ -78,9 +86,10 @@ json
   "format": "npx prettier --ignore-path .prettierignore --write \"**/*.{js,ts,json}\"",
   "test": "echo \"Error: no test specified\" && exit 1"
 }
-Create the folder structure
+```
+3.**Create the folder structure**
 
-pgsql
+
 
 backend_starter/
 ├── src/
@@ -89,8 +98,10 @@ backend_starter/
 ├── package.json
 ├── tsconfig.json
 └── .env
-Run the development server
+
+**Run the development server**
 
 ```bash
 
 npm run dev
+```
